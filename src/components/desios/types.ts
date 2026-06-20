@@ -13,7 +13,7 @@ export type AppId =
 export interface AppDef {
   id: AppId;
   name: string;
-  icon: React.ComponentType<{ className?: string }>;
+  icon: React.ComponentType<{ className?: string; style?: React.CSSProperties }>;
   accent: string;
   defaultSize?: { w: number; h: number };
 }
